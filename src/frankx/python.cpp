@@ -255,7 +255,7 @@ PYBIND11_MODULE(_frankx, m) {
         .def_readonly("dtheta", &franka::RobotState::dtheta)
         .def_readonly("current_errors", &franka::RobotState::current_errors)
         .def_readonly("last_motion_errors", &franka::RobotState::last_motion_errors)
-        .def_readonly("control_command_success_rate", &franka::RobotState::control_command_success_rate)
+        .def_readonly(" ", &franka::RobotState::control_command_success_rate)
         .def_readonly("robot_mode", &franka::RobotState::robot_mode)
         .def_readonly("time", &franka::RobotState::time);
 
