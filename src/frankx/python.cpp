@@ -219,6 +219,8 @@ PYBIND11_MODULE(_frankx, m) {
         .def_readonly("O_T_EE_d", &franka::RobotState::O_T_EE_d)
         .def_readonly("F_T_EE", &franka::RobotState::F_T_EE)
         .def_readonly("EE_T_K", &franka::RobotState::EE_T_K)
+        .def_readonly("F_T_NE", &franka::RobotState::F_T_NE)
+        .def_readonly("NE_T_EE", &franka::RobotState::NE_T_EE)
         .def_readonly("m_ee", &franka::RobotState::m_ee)
         .def_readonly("I_ee", &franka::RobotState::I_ee)
         .def_readonly("F_x_Cee", &franka::RobotState::F_x_Cee)
